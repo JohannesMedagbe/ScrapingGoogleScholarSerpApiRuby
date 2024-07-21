@@ -57,7 +57,7 @@ The function scholar_search:
 - writes the respective arrays obtained in the files scraping_scholar_results.txt and scraping_scholar_results.csv
 """
 def scholar_search(var)
-  params={engine: "google_scholar", q:"kenya health open data hiv malaria maternal mental", start:var, api_key:"02ee41751eb42f8295d2efa378cb66cd4f75a06c9124b13b3b16f0600af37cc0"}
+  params={engine: "google_scholar", q:"kenya health open data hiv malaria maternal mental", start:var, api_key:"<put your api key here>"}
   search=GoogleSearch.new(params)
   organic_results=search.get_hash[:organic_results]
   
